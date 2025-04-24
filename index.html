@@ -1,117 +1,171 @@
 <!DOCTYPE html>
-<htm lang="en">
-    <head>
-        <meta charset="UTF-8">  
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-        <title>Angela Abwoga Portfolio</title> 
-    </head>
-    <body>
-        <!--Navbar-->
-        <header>
-            <nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angela Abwoga Portfolio</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="box-1" id="home">
+      <h1>Angela Abwoga</h1>
+      <h3>Social Media Administrator</h3>
+      <p>"Crafting content, building brands, growing engagement"</p>
+    </div>
+
+    <!-- About Section -->
+    <div class="box-2" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a detail-oriented Social Media Administrator passionate about
+        creating engaging content, managing online communities, and driving
+        brand growth through strategic digital presence. I thrive on creativity,
+        analytics, and trends to keep brands relevant and impactful.
+      </p>
+    </div>
+
+    <!-- Work Section -->
+    <div class="box-3" id="work">
+      <h2>Work</h2>
+      <p>Here is a table showing projects I've undertaken:</p>
+      <table border="1">
+        <tr>
+          <th>Project</th>
+          <th>Description</th>
+          <th>Outcome</th>
+          <th>Platform</th>
+        </tr>
+        <tr>
+          <td>Brand Awareness</td>
+          <td>Social Media campaign for visibility</td>
+          <td>40% increase in engagement</td>
+          <td>TikTok, Instagram</td>
+        </tr>
+        <tr>
+          <td>Product Launch</td>
+          <td>Managed a product launch online</td>
+          <td>30% sale increase</td>
+          <td>Instagram</td>
+        </tr>
+        <tr>
+          <td>Community Engagement</td>
+          <td>Created content to boost interaction</td>
+          <td>50% increase in comments and shares</td>
+          <td>TikTok, Instagram</td>
+        </tr>
+      </table>
+
+      <h3>Campaign Results</h3>
+      <video width="320" controls>
+        <source src="./videos,audio/demovideo.mp4" type="video/mp4" />
+      </video>
+
+      <h3>Listen to My Audio</h3>
+      <audio controls>
+        <source src="your-audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <!-- Resume Section -->
+    <div class="box-4" id="resume">
+      <h2>My Resume</h2>
+      <p>Here is a summary of my skills and expertise:</p>
+      <ol>
+        <li>Campaign Management</li>
+        <li>Social Media Strategy</li>
+        <li>Analytics and Reporting</li>
+        <li>Scheduling Tools (Hootsuite)</li>
+      </ol>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="box-5" id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="number">Number:</label><br />
+        <input type="number" id="number" name="number" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+        ><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+            <!-- Quick Navigation Links -->
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
-        </header>
-        <main id="home">
-            <section>
-                <h1>Angela Abwoga</h1>
-                <h3>Social Media Administrator</h3>
-                <p>"Crafting content, building brands, growing engagement"</p>
-            </section>
-            <!--About Section-->
-            <section id="about">
-                <h2>About Me</h2>
-                <p>I am a detailed-oriented Social Media Administrator passionate about creating engaging content, managing online communities and driving brand growthnthrough strategic digital presence. I thrive on creativity, analytics and trends to keep brands relevant and impactful.</p>
-            </section>
-            <!--Work Section-->
-            <section id="Work">
-                <h2>Work</h2>
-                <P>Here is a table showing projects i've undertaken: </P>
-                <table border="1">
-                    <tr>
-                        <th>Project</th>
-                        <th>Description</th>
-                        <th>Outcome</th>
-                        <th>Platform</th>
-                    </tr>
-                    <tr>
-                        <td>Brand Awarness</td>
-                        <td>Social Media campaign for visibilty</td>
-                        <td>40% increase in engagement</td>
-                        <td>Tiktok, Instagram</td>
-                    </tr>
-                    <tr>
-                        <td>Product Launch</td>
-                        <td>Managed a product launch online</td>
-                        <td>30% sale increase</td>
-                        <td>Instagram</td>
-                    </tr>
-                    <tr>
-                        <td>Community Engagement</td>
-                        <td>Created content to boost interaction</td>
-                        <td>50% increase in comments and shares</td>
-                        <td>Tiktok, Instagram</td>
-                    </tr>
-                </table>
-                <h3>Campaign Results</h3>
-                <video width="320"  autoplay controls>
-                    <source src="demo.mp4" type="video/mp4" />
-                    Watch Campaign Results
-                </video>
-            </section>
-        
-            <!--Resume Section-->
-            
-            <section id="resume">
-                <h2>My Resume</h2>
-                <p>Here is a summary of my skills and expertise:</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <h4>Social Media Links</h4>
                 <ul>
-                    <li>Campaign Management</li>
-                    <li>Social Media Strategy</li>
-                    <li>Analytics and Reporting</li>
-                    <li>Scheduling Tools(Hootsuite)</li>
+                  <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i>Tiktok</a></li>
                 </ul>
+            </div>
 
-            </section>
-            <!--Contact Section-->
-            <section id="contact">
-                <h2>Contact Me!</h2>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required /><br /><br />
-
-                    <label for="number">Number:</label>
-                    <input type="number" id="name" name="number" required /><br /><br />
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required /><br /><br />
-
-                    <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-                    
-                    <button type="submit">Send</button>
-                </form>
-
-            </section>
-        </main>
-
-        <!--Footer Section-->
-
-        <footer>
-            <div>
-            <h2>Follow me </h2>
-            <ul>
-                <li>LinkedIn</li>
-                <li>Twitter</li>
-            </ul>
-            <p>Copyright &copy; 2025 By Angela Abwoga.</p>
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h4>Contact</h4>
+                <p>Email: angela@abwoga.com</p>
+                <p>Phone: +254 712 345 678 </p>
+            </div>
         </div>
-        </footer>
+<hr class="styled-line">
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tripple A Designs. All rights reserved.</p>
+        </div>
+    </footer>
     </body>
 </html>
